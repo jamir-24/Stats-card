@@ -1,0 +1,195 @@
+/* Global Section */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+}
+body {
+    background:#0a0c1b;
+    color: whitesmoke;
+}
+/* Global Section */
+.box-container {
+    background: #1c1938;
+    width: 90%;
+    height: 85%;
+    inset: 0;
+    position: absolute;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.items .image-items {
+    background: url('./images/image-header-mobile.jpg') no-repeat;
+    width: 100%;
+    height: 13rem;
+    background-size: 100% 100%, cover;
+    filter: grayscale(100%) brightness(39%) sepia(100%) hue-rotate(234deg) saturate(580%) contrast(.8);
+}
+@media (max-width:1030px){
+    /* Text Styling below */
+.box-container .text-items{
+    text-align: center;
+}
+span {
+    color: #a95cd8;
+}
+h2 {
+    font-family: 'IBM Plex Serif', serif;
+    color: #feffff;   
+    font-size: 1.3rem;
+    margin: 1.2rem 4rem .5rem 4rem;
+    
+}
+.desc {
+    font-family: 'IBM Plex Serif', serif;
+    color: #a4a1bb;
+    font-size: .8rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5;
+    margin: 0 2.4rem;
+    
+}
+h3 {
+    font-size: 1.2rem;
+}
+.stats p {
+    font-size: .68rem;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    color: #a4a1bb;
+}
+
+.stats> div {
+    display: grid;
+    grid-template-columns: 1fr;
+    line-height: 1.5;
+    margin-top: .5rem;
+    text-transform: uppercase;
+}
+
+/* Text Styling End*/
+}
+
+/* Footer small devices */
+footer {
+    
+    position: fixed;
+    bottom: 0;
+    margin-left: 10%;
+    margin-right: 5%;
+    }
+footer .attribution {
+    font-size: .9rem;
+}
+
+.attribution a { 
+    color: #a95cd8;
+
+}
+/* Footer small devices */
+
+/* Desktop verson below */
+@media (min-width:1031px){
+
+    .box-container {
+        background: #1c1938;
+        width: 80%;
+        height: 60%;
+        inset: 0;
+        position: absolute;
+        margin: auto;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .items {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: row-reverse;
+    }
+    .items .image-items {
+        background: url('./images/image-header-desktop.jpg') no-repeat;
+        width: 50%;
+        height: 100%;
+        background-size: 100% 100%, cover;
+    }
+    .items .text-items {
+        width: 50%;
+        
+        
+    }
+    
+    
+    /* Text Styling for screen above 800px */
+    span {
+        color: #a95cd8;
+    }
+    .text-items {
+        padding-left: 4rem;
+        padding-top: 3rem;
+    }
+    h2 {
+        font-family: 'IBM Plex Serif', serif;
+        color: #feffff;   
+        font-size: 1.9rem;
+        font-weight: 600;
+        width: 80%;
+        letter-spacing: .1rem;
+
+    }
+    .desc {
+        font-family: 'IBM Plex Serif', serif;
+        color: #a4a1bb;
+        font-size: .7rem;
+        letter-spacing: 0.05rem;
+        line-height: 1.7;
+        padding-top: 1.5rem;
+        width: 68%;
+        font-weight: 400;
+        
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    .stats p {
+        font-size: .6rem;
+        letter-spacing: 0.05rem;
+        font-weight: lighter;
+        color: #a4a1bb;
+    }
+    .stats> div{
+        padding-right: 15%;
+    }
+    .stats{
+        display: flex;
+        line-height: 1.5;
+        margin-top: 3rem;
+        text-transform: uppercase;
+    } 
+   
+    
+
+
+
+    /* Text Styling End */
+
+
+
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        margin-left: 37%;
+        margin-right: 37%;
+        }
+
+}
